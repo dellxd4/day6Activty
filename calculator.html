@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <title>Calculator</title>
+
+
+    <script>
+        function calculateSum() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var addition = a + b;
+            document.getElementById("add").value = (addition);
+        }
+
+        function calculateDiff() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var subtraction = a - b;
+            document.getElementById("subtraction").value = (subtraction);
+        }
+
+        function calculateMul() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var multiplication = a * b;
+            document.getElementById("mul").value = (a * b);
+        }
+
+        function calculateDiv() {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var division = a / b;
+            document.getElementById("div").value = (a / b);
+        }
+
+        function calculate() {
+            var flag1 = calculateSum();
+            var flag2 = calculateDiff();
+            var flag3 = calculateMul();
+            var flag4 = calculateDiv();
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <fieldset style=" background-color: rgb(182, 174, 174); width: fit-content;" >
+        <legend align="center" >Calculator</legend>
+
+        <form onclick="calculate()">
+            Enter two numbers :
+            <input type="number" id="num1" placeholder="1st number">
+            <input type="number" id="num2" placeholder="2nd number"> <br><br>
+
+            <button type="button">Calculate</button> <br>
+            Addition: <input type="text" name="add" id="add" readonly size="3" ><br>
+            Subtraction: <input type="text" name="sub" id="subtraction" readonly size="3"> <br>
+            Multiplication: <input type="text" name="mul" id="mul" readonly size="6"> <br>
+            Division: <input type="text" name="div" id="div" readonly size="6"> <br>
+
+            <button type="reset">clear</button>
+
+        </form>
+
+    </fieldset>
+
+    <ol>
+        <li>Here we are with Git Clone</li>
+        <li>Do you find it easy ?</li>
+        <li>We have best community to help you out</li>
+    </ol>
+
+</body>
+
+</html>
